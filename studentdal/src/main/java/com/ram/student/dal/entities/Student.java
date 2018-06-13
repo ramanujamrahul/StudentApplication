@@ -4,7 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+//annotating for object relation mapping
 @Entity
 @Table(name="studenttab")
 public class Student {
@@ -51,6 +51,7 @@ public class Student {
 	}
 
 	@Override
+	//to string method to make more sense while print on console
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", course=" + course + ", fee=" + fee + "]";
 	}
